@@ -18,13 +18,13 @@ function App() {
     <>
       <Routes>
         {/* Nested Routes */}
-        <Route path="/" element={<LandingPage />} />
         <Route path="/main" element={<Header />}>
           <Route path="/main" element={<Home />} />
           <Route path="/main/about" element={<About />} />
           <Route path="/main/contact" element={<Contact />} />
         </Route>
-        <Route path="/admin" element={<AdminLayout />}></Route>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/admin" element={<AdminLayout />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {/* <h1>Hammaga salom!</h1>
